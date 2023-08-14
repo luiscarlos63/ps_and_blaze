@@ -1,0 +1,2571 @@
+/*
+
+Xilinx Vivado v2021.2 (64-bit) [Major: 2021, Minor: 2]
+SW Build: 3367213 on Tue Oct 19 02:47:39 MDT 2021
+IP Build: 3369179 on Thu Oct 21 08:25:16 MDT 2021
+
+Process ID (PID): 5499
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Aug 11 10:15:18 WEST 2023
+Time zone: 	Western European Standard Time (Europe/Lisbon)
+
+OS: Ubuntu
+OS Version: 5.15.0-78-generic
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: 0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	/tools/Xilinx/Vivado/2021.2/tps/lnx64/jre11.0.11_9
+Java executable: 	/tools/Xilinx/Vivado/2021.2/tps/lnx64/jre11.0.11_9/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m, -Xrs]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	luiscarlos
+User home directory: /home/luiscarlos
+User working directory: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2021.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2021.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2021.2/bin
+
+Vivado preferences file: /home/luiscarlos/.Xilinx/Vivado/2021.2/vivado.xml
+Vivado preferences directory: /home/luiscarlos/.Xilinx/Vivado/2021.2/
+Vivado layouts directory: /home/luiscarlos/.Xilinx/Vivado/2021.2/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2021.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado.log
+Vivado journal file: 	/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-5499-luiscarlos-GL552VX
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2021.2
+XILINX_SDK: /tools/Xilinx/Vitis/2021.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2021.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2021.2
+XILINX_XRT: /opt/xilinx/xrt
+
+
+GUI allocated memory:	672 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 2,083 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: Sourcing tcl script '/home/luiscarlos/.Xilinx/Vivado/Vivado_init.tcl' 
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  2642 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 2393ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2399 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,652 MB. GUI used memory: 54 MB. Current time: 8/11/23, 10:15:20 AM WEST
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // y
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  1719 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1448 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1466 ms.
+// Elapsed time: 17 seconds
+setFileChooser("/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.xpr");
+// [GUI Memory]: 79 MB (+80595kb) [00:00:50]
+// [Engine Memory]: 1,668 MB (+1597209kb) [00:00:50]
+// Opening Vivado Project: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.xpr. Version: Vivado v2021.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: open_project /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 99 MB (+16878kb) [00:01:04]
+// [Engine Memory]: 1,847 MB (+100099kb) [00:01:04]
+// [GUI Memory]: 120 MB (+16048kb) [00:01:07]
+// [Engine Memory]: 1,942 MB (+2841kb) [00:01:07]
+// WARNING: HEventQueue.dispatchEvent() is taking  7475 ms.
+// Tcl Message: open_project /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 7625.465 ; gain = 154.355 ; free physical = 192 ; free virtual = 13479 
+// Project name: ps_and_blaze; location: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project; part: xczu3eg-sbva484-1-i
+// Elapsed time: 21 seconds
+dismissDialog("Open Project"); // bA
+// HMemoryUtils.trashcanNow. Engine heap size: 2,043 MB. GUI used memory: 85 MB. Current time: 8/11/23, 10:16:15 AM WEST
+// [Engine Memory]: 2,043 MB (+4259kb) [00:01:18]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: open_bd_design {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd} 
+// Tcl Message: Reading block design file </home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// [GUI Memory]: 142 MB (+17686kb) [00:01:24]
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  5470 ms.
+// JavaFX intialization before: 1691745398445
+// Elapsed time: 20 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 8046.684 ; gain = 0.000 ; free physical = 122 ; free virtual = 12815 
+// JavaFX initialization after: 1691745399586
+// 'bW' command handler elapsed time: 21 seconds
+// [GUI Memory]: 163 MB (+14086kb) [00:02:45]
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 230ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1165 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1332 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1713 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2117 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4739 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,119 MB. GUI used memory: 109 MB. Current time: 8/11/23, 10:46:15 AM WEST
+// Elapsed time: 1894 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aL
+// PAPropertyPanels.initPanels (microblaze_0) elapsed time: 0.3s
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// WARNING: HEventQueue.dispatchEvent() is taking  1200 ms.
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// Elapsed time: 30 seconds
+dismissDialog("Re-customize IP"); // N
+// [Engine Memory]: 2,154 MB (+9629kb) [00:33:47]
+dismissDialog("Re-customize IP"); // r
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HIERARCHY_BLOCK
+// WARNING: HEventQueue.dispatchEvent() is taking  2608 ms.
+// JavaFX intialization before: 1691747329487
+// JavaFX initialization after: 1691747329488
+// [GUI Memory]: 175 MB (+4300kb) [00:33:54]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// [GUI Memory]: 197 MB (+13829kb) [00:34:05]
+// Elapsed time: 124 seconds
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "microblaze_0 ;  ;  ;  ;  ; ", 1, "microblaze_0", 0, true, false, false, false, true, false); // r - Popup Trigger - Node
+// Elapsed time: 165 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g
+selectButton("OptionPane.button", "Cancel Process"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run design_1_lmb_bram_if_cntlr_0_0_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_iomodule_0_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_microblaze_0_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_lmb_v10_1_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_axi_smc_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_lmb_bram_if_cntlr_1_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run design_1_microblaze_mcs_0_0_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run design_1_zynq_ultra_ps_e_0_0_synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run design_1_lmb_v10_0_1_synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run design_1_lmb_bram_if_cntlr_0_bram_0_synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Aug 11 10:53:57 2023] Launched synth_1... Run output will be captured here: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// WARNING: HEventQueue.dispatchEvent() is taking  2624 ms.
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// PAPropertyPanels.initPanels (/dlmb_cntlr/SLMB) elapsed time: 0.7s
+// Elapsed time: 27 seconds
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/dlmb_cntlr/SLMB ; SLMB ; Mem ; 0x0000_0000 ; 8K ; 0x0000_1FFF", 3, "0x0000_1FFF", 5, false); // r
+// Tcl Message: current_bd_design [get_bd_designs bd_e547] 
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1129 ms. Increasing delay to 3387 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 11037ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11041 ms.
+// Elapsed time: 43 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 841ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  15049 ms.
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 708ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1327 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3354 ms.
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking 16321ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  16321 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2829 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7754 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8557 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6800 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1290 ms. Increasing delay to 3000 ms.
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 983ms to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 192 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// PAPropertyPanels.initPanels (iomodule_0) elapsed time: 0.2s
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// [GUI Memory]: 208 MB (+1248kb) [00:44:16]
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+dismissDialog("Re-customize IP"); // N
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 30 seconds
+dismissDialog("Re-customize IP"); // r
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// WARNING: HEventQueue.dispatchEvent() is taking  13901 ms.
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 15713 ms. Increasing delay to 47139 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  18264 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12270 ms.
+// Elapsed time: 67 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 570 ms. Decreasing delay to 2570 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4176 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 9159ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9159 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 9311 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 9456 ms. Increasing delay to 28368 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 279 ms. Decreasing delay to 2279 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2202 ms.
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking 462ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1266 ms.
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking 736ms to process. Increasing delay to 3000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1237ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1237 ms.
+// Elapsed time: 163 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// WARNING: HEventQueue.dispatchEvent() is taking  1070 ms.
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,219 MB. GUI used memory: 159 MB. Current time: 8/11/23, 11:03:57 AM WEST
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "UART", 1); // bj
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "FIT Timers", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "UART", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "System", 0); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Interrupt", 6); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "System", 0); // bj
+// WARNING: HEventQueue.dispatchEvent() is taking  5365 ms.
+// Elapsed time: 17 seconds
+selectCheckBox((HResource) null, "Enable IO Bus", false); // g: FALSE
+// WARNING: HEventQueue.dispatchEvent() is taking  6147 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9401 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1730 ms. Increasing delay to 5190 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2146 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7037 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8617 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  17924 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 24815 ms. Increasing delay to 5000 ms.
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 104 seconds
+dismissDialog("Re-customize IP"); // r
+closeMainWindow("Block Design - bd_e547"); // bb
+// HMemoryUtils.trashcanNow. Engine heap size: 2,151 MB. GUI used memory: 140 MB. Current time: 8/11/23, 11:06:29 AM WEST
+// WARNING: HEventQueue.dispatchEvent() is taking  2105 ms.
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// PAPropertyPanels.initPanels (microblaze_mcs_0) elapsed time: 0.8s
+// Tcl Message: current_bd_design [get_bd_designs design_1] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+selectCheckBox((HResource) null, "Enable IO Bus", false); // g: FALSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1489 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// Tcl Command: 'set_property -dict [list CONFIG.USE_IO_BUS {0}] [get_bd_cells microblaze_mcs_0]'
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.USE_IO_BUS {0}] [get_bd_cells microblaze_mcs_0] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: Wrote  : </home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ui/bd_5acb7d30.ui>  
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,152 MB. GUI used memory: 175 MB. Current time: 8/11/23, 11:07:09 AM WEST
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 9225.980 ; gain = 0.000 ; free physical = 485 ; free virtual = 9013 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: endgroup 
+// Elapsed time: 35 seconds
+dismissDialog("Customize IP"); // bA
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,356 MB (+99114kb) [00:52:21]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 49 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aL
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "design_1 ;  ; Running Submodule Runs ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Aug 10 16:49:08 WEST 2023 ; 18:18:59 ;  ;  ;  ;  ; ", 3); // az
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 223 MB (+4062kb) [00:53:47]
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 80 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+dismissDialog("Re-customize IP"); // r
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HIERARCHY_BLOCK
+// WARNING: HEventQueue.dispatchEvent() is taking  2011 ms.
+// JavaFX intialization before: 1691748592840
+// JavaFX initialization after: 1691748592840
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// Elapsed time: 193 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // D
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode. INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 9460.328 ; gain = 0.000 ; free physical = 127 ; free virtual = 12474 
+dismissDialog("Validate Design"); // bA
+selectButton("OptionPane.button", "OK"); // JButton
+closeMainWindow("Block Design - bd_e547"); // bb
+// HMemoryUtils.trashcanNow. Engine heap size: 2,245 MB. GUI used memory: 150 MB. Current time: 8/11/23, 11:13:22 AM WEST
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: save_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/ui/bd_5acb7d30.ui>  Wrote  : </home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : </home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+dismissDialog("Save Design"); // bA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Out-of-Context module run(s) is/are Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_microblaze_mcs_0_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_axi_smc_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: VHDL Output written to : /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/synth/design_1.v VHDL Output written to : /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/sim/design_1.v VHDL Output written to : /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/hw_handoff/design_1_microblaze_mcs_0_0.hwh Generated Hardware Definition File /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/synth/design_1_microblaze_mcs_0_0.hwdef 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_mcs_0 . 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh Generated Hardware Definition File /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc . 
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_pc . 
+// Tcl Message: Exporting to file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Hardware Definition File /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  1056 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,571 MB. GUI used memory: 147 MB. Current time: 8/11/23, 11:13:49 AM WEST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// [Engine Memory]: 2,494 MB (+21163kb) [00:58:58]
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Fri Aug 11 11:13:53 2023] Launched synth_1... Run output will be captured here: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 9670.996 ; gain = 210.668 ; free physical = 219 ; free virtual = 12122 
+// 'k' command handler elapsed time: 24 seconds
+// Elapsed time: 23 seconds
+dismissDialog("Starting Design Runs"); // bA
+// WARNING: HTimer (RSBApplyAutomationBar Update Bar Timer) is taking 752ms to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 315 seconds
+dismissDialog("Synthesis Completed"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+selectMenuItem(PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION, "Associate ELF Files..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+// Run Command: PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION
+selectTreeTable(PAResourceEtoH.ElfFileAssociationDialog_ELF_FILE_ASSOCIATION_TREE_TABLE, "microblaze_0 ; microblaze_0", 4, "microblaze_0", 0, false); // D
+selectTreeTable(PAResourceEtoH.ElfFileAssociationDialog_ELF_FILE_ASSOCIATION_TREE_TABLE, "microblaze_0 ; microblaze_0", 4, "microblaze_0", 1, false); // D
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Select ELF Files"); // s
+selectTreeTable(PAResourceEtoH.ElfFileAssociationDialog_ELF_FILE_ASSOCIATION_TREE_TABLE, "microblaze_0 ; microblaze_0", 4, "microblaze_0", 1, false); // D
+selectList(PAResourceEtoH.ElfFileAssociationDialog_ELF_FILE_ASSOCIATION_LIST, "/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/blaze_app/Debug/blaze_app.elf", 1); // u
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Select ELF Files"); // s
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// 'b' command handler elapsed time: 21 seconds
+// Tcl Message: set_property SCOPED_TO_REF design_1 [get_files -all -of_objects [get_fileset sources_1] {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/blaze_app/Debug/blaze_app.elf}] 
+// Tcl Message: set_property SCOPED_TO_CELLS { microblaze_mcs_0/inst/microblaze_I microblaze_0 } [get_files -all -of_objects [get_fileset sources_1] {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/blaze_app/Debug/blaze_app.elf}] 
+dismissDialog("Associate ELF Files"); // l
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xczu3eg-sbva484-1-i 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,861 MB. GUI used memory: 140 MB. Current time: 8/11/23, 11:20:05 AM WEST
+// [Engine Memory]: 3,290 MB (+703218kb) [01:05:20]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,324 MB. GUI used memory: 140 MB. Current time: 8/11/23, 11:20:28 AM WEST
+// Xgd.load filename: /tools/Xilinx/Vivado/2021.2/data/parts/xilinx/zynquplus/devint/zynquplus/xczu3eg/xczu3eg.xgd; ZipEntry: xczu3eg_floorplan.xgd elapsed time: 0.5s
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /tools/Xilinx/Vivado/2021.2/data/parts/xilinx/zynquplus/devint/zynquplus/xczu3eg/xczu3eg.xgd; ZipEntry: xczu3eg_detail.xgd elapsed time: 1.2s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.7s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 3.2s
+// [Engine Memory]: 3,484 MB (+31286kb) [01:05:37]
+// [GUI Memory]: 237 MB (+3210kb) [01:05:48]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  16251 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.41 . Memory (MB): peak = 10243.520 ; gain = 0.000 ; free physical = 140 ; free virtual = 11547 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 453 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2021.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Generating merged BMM file for the design top 'design_1_wrapper'... 
+// Tcl Message: INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/blaze_app/Debug/blaze_app.elf /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/blaze_app/Debug/blaze_app.elf  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 10243.520 ; gain = 0.000 ; free physical = 123 ; free virtual = 11372 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 339 instances were transformed.   IBUF => IBUF (IBUFCTRL, INBUF): 3 instances   LUT6_2 => LUT6_2 (LUT5, LUT6): 160 instances   RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 44 instances   RAM32X1D => RAM32X1D (RAMD32(x2)): 132 instances  
+// HMemoryUtils.trashcanNow. Engine heap size: 3,464 MB. GUI used memory: 190 MB. Current time: 8/11/23, 11:20:46 AM WEST
+// Tcl Message: open_run: Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 10409.191 ; gain = 735.250 ; free physical = 211 ; free virtual = 11286 
+// ExpRunCommands.openSynthResults elapsed time: 47.2s
+// 'el' command handler elapsed time: 47 seconds
+// Elapsed time: 47 seconds
+dismissDialog("Open Synthesized Design"); // bA
+// [GUI Memory]: 250 MB (+865kb) [01:05:53]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,272 MB. GUI used memory: 191 MB. Current time: 8/11/23, 11:21:04 AM WEST
+// [Engine Memory]: 4,367 MB (+743262kb) [01:06:14]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,731 MB. GUI used memory: 191 MB. Current time: 8/11/23, 11:21:19 AM WEST
+// RouteApi::initDelayMediator elapsed time: 38.6s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// [Engine Memory]: 4,726 MB (+147215kb) [01:06:43]
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1179ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1349 ms.
+// PAPropertyPanels.initPanels (GPIO1_64931) elapsed time: 0.3s
+// Elapsed time: 625 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO1_64931 (1) ; OUT ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ;  ; NONE ; FP_VTT_50 ;  ;  ;  ;  ;  ;  ; ", 2, "default (LVCMOS18)", 8, true); // A - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {GPO1[0]}]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "UART_54576 (2) ; (Multiple) ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; (Multiple) ;  ;  ;  ;  ;  ;  ; ", 5, "default (LVCMOS18)", 8, true); // A - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list UART_rxd UART_txd]] 
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "UART_54576 (2) ; (Multiple) ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; (Multiple) ;  ;  ;  ;  ;  ;  ; ", 5); // A
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (2) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 6); // A
+// Elapsed time: 32 seconds
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_10965 (1) ; OUT ;  ;  ;  ;  ; true ; 26 ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ;  ;  ;  ;  ;  ;  ; ", 3); // A
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_10965 (1) ; OUT ;  ;  ;  ;  ; true ; 26 ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ;  ;  ;  ;  ;  ;  ; ", 3); // A
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO1_64931 (1) ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ;  ;  ;  ;  ;  ;  ; ", 2); // A
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPO1 (1) ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ;  ;  ;  ;  ;  ;  ; ", 3); // A
+// PAPropertyPanels.initPanels (GPO1[0]) elapsed time: 0.4s
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPO1[0] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ;  ;  ;  ;  ;  ;  ; ", 4, (String) null, 5, false); // A
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {GPO1[0]} E5 
+// WARNING: HTimer (Update tree table timer) is taking 163ms to process. Increasing delay to 1300 ms.
+// Elapsed time: 31 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "UART_txd ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ;  ;  ;  ;  ;  ;  ; ", 11, (String) null, 5, false); // A
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports UART_txd D6 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "uart_rtl_54576 (2) ; (Multiple) ;  ;  ;  ;  ; true ; 26 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; (Multiple) ;  ;  ;  ;  ;  ;  ; ", 12, (String) null, 5, true); // A - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "uart_rtl_54576 (2) ; (Multiple) ;  ;  ;  ;  ; true ; 26 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; (Multiple) ;  ;  ;  ;  ;  ;  ; ", 12, (String) null, 5, true); // A - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "uart_rtl_54576 (2) ; (Multiple) ;  ;  ;  ;  ; true ; 26 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; (Multiple) ;  ;  ;  ;  ;  ;  ; ", 12, (String) null, 5, true); // A - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "uart_rtl_54576 (2) ; (Multiple) ;  ;  ;  ;  ; true ; 26 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; (Multiple) ;  ;  ;  ;  ;  ;  ; ", 12, (String) null, 5, true); // A - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "uart_rtl_54576 (2) ; (Multiple) ;  ;  ;  ;  ; true ; 26 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; (Multiple) ;  ;  ;  ;  ;  ;  ; ", 12, (String) null, 5, true, false, false, false, false, true); // A - Double Click - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "UART_rxd ; IN ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ;  ;  ;  ;  ;  ;  ; ", 10, (String) null, 5, false); // A
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports UART_rxd D5 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_DESIGN
+// Elapsed time: 18 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Out of Date Design"); // A
+// Tcl Message: save_constraints 
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// 'h' command handler elapsed time: 5 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, IO.xdc]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, IO.xdc]", 5, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  2383 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, IO.xdc]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, IO.xdc]", 5, false, false, false, false, false, true); // D - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+// Device view-level: 0.0
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // n
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // n
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: INFO: [Timing 38-480] Writing timing data to binary archive. 
+// Tcl Message: Writing placer database... Writing XDEF routing. 
+// WARNING: HEventQueue.dispatchEvent() is taking  1408 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 4,823 MB. GUI used memory: 199 MB. Current time: 8/11/23, 11:33:35 AM WEST
+// Tcl Message: Writing XDEF routing logical nets. Writing XDEF routing special nets. 
+// Tcl Message: Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 11713.309 ; gain = 0.000 ; free physical = 133 ; free virtual = 10172 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Fri Aug 11 11:33:50 2023] Launched impl_1... Run output will be captured here: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 11713.309 ; gain = 40.020 ; free physical = 130 ; free virtual = 10165 
+// 'c' command handler elapsed time: 18 seconds
+// Elapsed time: 18 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aL
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "design_1 ;  ; Submodule Runs Complete ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Aug 10 16:49:08 WEST 2023 ; 18:18:15 ;  ;  ;  ;  ; ", 3, "design_1", 0, true); // az - Node
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "design_1 ;  ; Submodule Runs Complete ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Aug 10 16:49:08 WEST 2023 ; 18:18:15 ;  ;  ;  ;  ; ", 3); // az
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 100 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g
+selectButton(PAResourceQtoS.StateMonitor_RESET_RUN, "Reset Run"); // a
+dismissDialog("Cancel Implementation"); // aV
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/synth_1/design_1_wrapper.dcp 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Fri Aug 11 11:35:52 2023] Launched synth_1... Run output will be captured here: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bA
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // g
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,786 MB. GUI used memory: 196 MB. Current time: 8/11/23, 11:35:55 AM WEST
+// TclEventType: RUN_STATUS_CHANGE
+// Engine heap size: 4,795 MB. GUI used memory: 205 MB. Current time: 8/11/23, 11:35:58 AM WEST
+// WARNING: HEventQueue.dispatchEvent() is taking  4038 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bA
+// [GUI Memory]: 265 MB (+2627kb) [01:21:07]
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g
+selectButton("OptionPane.button", "Cancel Process"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("No Implementation Results Available"); // A
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Aug 11 11:36:13 2023] Launched synth_1... Run output will be captured here: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/synth_1/runme.log [Fri Aug 11 11:36:13 2023] Launched impl_1... Run output will be captured here: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking 8805ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8823 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 1014ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1014 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 682 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // al
+// Elapsed time: 18 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Tcl Command: 'get_property pfm_name [get_files -all {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd}]'
+// WARNING: HEventQueue.dispatchEvent() is taking  1571 ms.
+selectButton("NEXT", "Next >"); // JButton
+selectRadioButton(PAResourceEtoH.ExportFixedPlatformWizard_INCLUDE_BITSTREAM, "Include bitstream. This platform includes the complete hardware implementation and bitstream, in addition to the hardware specification for software tools."); // b
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceEtoH.ExportFixedPlatformWizard_EXPORT_DIRECTORY, (String) null); // s
+setFolderChooser("/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw");
+selectButton(PAResourceEtoH.ExportFixedPlatformWizard_EXPORT_DIRECTORY, (String) null); // s
+setFolderChooser("/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/pfm");
+// Elapsed time: 10 seconds
+setText(PAResourceEtoH.ExportFixedPlatformWizard_XSA_FILE_NAME, "ps_blaze_v3", true); // aa
+selectButton("NEXT", "Next >"); // JButton
+// Tcl Command: 'get_property pfm_name [get_files -all {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd}]'
+selectButton("FINISH", "Finish"); // JButton
+// 'n' command handler elapsed time: 37 seconds
+dismissDialog("Export Hardware Platform"); // g
+// Tcl Message: write_hw_platform -fixed -include_bit -force -file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/pfm/ps_blaze_v3.xsa 
+// Tcl Message: INFO: [Vivado 12-4895] Creating Hardware Platform: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/pfm/ps_blaze_v3.xsa ... 
+// Tcl Message: INFO: [Vivado 12-12464] The Hardware Platform can be used for Hardware INFO: [Vivado 12-4896] Successfully created Hardware Platform: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/pfm/ps_blaze_v3.xsa 
+// Tcl Message: write_hw_platform: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 11713.309 ; gain = 0.000 ; free physical = 623 ; free virtual = 10098 
+// Tcl Message: INFO: [Hsi 55-2053] elapsed time for repository (/tools/Xilinx/Vivado/2021.2/data/embeddedsw) loading 1 seconds 
+// Elapsed time: 14 seconds
+dismissDialog("Export Hardware Platform"); // bA
+// Elapsed time: 47 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HIERARCHY_BLOCK
+// WARNING: HEventQueue.dispatchEvent() is taking  2180 ms.
+// JavaFX intialization before: 1691751024054
+// JavaFX initialization after: 1691751024055
+// [GUI Memory]: 293 MB (+15590kb) [01:35:28]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// Elapsed time: 79 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+closeMainWindow("Block Design - bd_e547"); // bb
+// HMemoryUtils.trashcanNow. Engine heap size: 4,788 MB. GUI used memory: 169 MB. Current time: 8/11/23, 11:51:48 AM WEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1456 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1891 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3275 ms. Increasing delay to 9825 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4510 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 4,740 MB. GUI used memory: 151 MB. Current time: 8/11/23, 12:21:55 PM WEST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3763 ms. Increasing delay to 4000 ms.
+// Elapsed time: 2960 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// PAPropertyPanels.initPanels (/iomodule_0/SLMB) elapsed time: 0.3s
+// Elapsed time: 98 seconds
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/iomodule_0/SLMB ; SLMB ; Reg ; 0x8000_0000 ; 64K ; 0x8000_FFFF", 4, "/iomodule_0/SLMB", 0, false); // r
+// Elapsed time: 149 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // D
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Elapsed time: 45 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Map", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// WARNING: HEventQueue.dispatchEvent() is taking  16387 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 4,745 MB. GUI used memory: 149 MB. Current time: 8/11/23, 12:52:06 PM WEST
+// Elapsed time: 584 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// Elapsed time: 217 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HIERARCHY_BLOCK
+// WARNING: HEventQueue.dispatchEvent() is taking  1968 ms.
+// JavaFX intialization before: 1691755178619
+// JavaFX initialization after: 1691755178619
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 4,849 MB. GUI used memory: 174 MB. Current time: 8/11/23, 12:59:42 PM WEST
+closeMainWindow("Block Design - bd_e547"); // bb
+// HMemoryUtils.trashcanNow. Engine heap size: 4,849 MB. GUI used memory: 161 MB. Current time: 8/11/23, 12:59:46 PM WEST
+// Elapsed time: 121 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 287ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3452 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1450ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2801 ms.
+// Elapsed time: 1576 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HIERARCHY_BLOCK
+// 'ce' command handler elapsed time: 3 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  3172 ms.
+// JavaFX intialization before: 1691756892195
+// JavaFX initialization after: 1691756892198
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// PAPropertyPanels.initPanels (lmb_bram_I) elapsed time: 0.5s
+// Tcl Message: current_bd_design [get_bd_designs bd_e547] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// Elapsed time: 20 seconds
+dismissDialog("Re-customize IP"); // N
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 3); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // bj
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: current_bd_design [get_bd_designs design_1] 
+// Elapsed time: 17 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Power Estimation", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "IP Symbol", 0); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bj
+// Elapsed time: 15 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 3); // bj
+dismissDialog("Re-customize IP"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 3); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bj
+dismissDialog("Re-customize IP"); // r
+// HMemoryUtils.trashcanNow. Engine heap size: 4,753 MB. GUI used memory: 180 MB. Current time: 8/11/23, 1:29:48 PM WEST
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: current_bd_design [get_bd_designs bd_e547] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// Elapsed time: 157 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "ECC", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Addresses", 0); // bj
+dismissDialog("Re-customize IP"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+dismissDialog("Re-customize IP"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+dismissDialog("Re-customize IP"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+dismissDialog("Re-customize IP"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+dismissDialog("Re-customize IP"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+dismissDialog("Re-customize IP"); // r
+closeMainWindow("Block Design - bd_e547"); // bb
+// HMemoryUtils.trashcanNow. Engine heap size: 4,811 MB. GUI used memory: 178 MB. Current time: 8/11/23, 1:32:32 PM WEST
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+dismissDialog("Re-customize IP"); // r
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: current_bd_design [get_bd_designs design_1] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+dismissDialog("Re-customize IP"); // r
+// PAPropertyPanels.initPanels (iomodule_0) elapsed time: 0.2s
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+dismissDialog("Re-customize IP"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// Elapsed time: 24 seconds
+dismissDialog("Re-customize IP"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+dismissDialog("Re-customize IP"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+dismissDialog("Re-customize IP"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// Elapsed time: 719 seconds
+dismissDialog("Re-customize IP"); // r
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/ilmb_cntlr/SLMB ; SLMB ; Mem ; 0x8000_0000 ; 8K ; 0x8000_1FFF", 10, "/ilmb_cntlr/SLMB", 0, false); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/dlmb_cntlr/SLMB ; SLMB ; Mem ; 0x8001_0000 ; 8K ; 0x8001_1FFF", 3, "0x8001_0000", 3, false); // r
+// Tcl Command: 'set_property offset 0x80010000 [get_bd_addr_segs {microblaze_0/Data/SEG_lmb_bram_if_cntlr_1_Mem}]'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Elapsed time: 15 seconds
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/iomodule_0/SLMB ; SLMB ; Reg ; 0x8000_0000 ; 64K ; 0x8000_FFFF", 4, "0x8000_0000", 3, false); // r
+// WARNING: HEventQueue.dispatchEvent() is taking  14192 ms.
+// Tcl Message: set_property offset 0x80010000 [get_bd_addr_segs {microblaze_0/Data/SEG_lmb_bram_if_cntlr_1_Mem}] 
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/dlmb_cntlr/SLMB ; SLMB ; Mem ; 0x8001_0000 ; 8K ; 0x8001_1FFF", 3, "8K", 4, false); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/iomodule_0/SLMB ; SLMB ; Reg ; 0x8000_0000 ; 64K ; 0x8000_FFFF", 4, "0x8000_0000", 3, false); // r
+// Tcl Command: 'set_property offset 0x80060000 [get_bd_addr_segs {microblaze_0/Data/SEG_iomodule_0_Reg}]'
+// TclEventType: RSB_UPDATE_ADDRASSIGN
+// TclEventType: RSB_PROPERTY_CHANGE
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/dlmb_cntlr/SLMB ; SLMB ; Mem ; 0x8001_0000 ; 8K ; 0x8001_1FFF", 3, "0x8001_0000", 3, false); // r
+// Tcl Message: set_property offset 0x80060000 [get_bd_addr_segs {microblaze_0/Data/SEG_iomodule_0_Reg}] 
+// Tcl Command: 'set_property offset 0x80000000 [get_bd_addr_segs {microblaze_0/Data/SEG_lmb_bram_if_cntlr_1_Mem}]'
+// TclEventType: RSB_UPDATE_ADDRASSIGN
+// TclEventType: RSB_PROPERTY_CHANGE
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/iomodule_0/SLMB ; SLMB ; Reg ; 0x8006_0000 ; 64K ; 0x8006_FFFF", 4, "0x8006_0000", 3, false); // r
+// Tcl Message: set_property offset 0x80000000 [get_bd_addr_segs {microblaze_0/Data/SEG_lmb_bram_if_cntlr_1_Mem}] 
+// Elapsed time: 267 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Tcl Command: 'set_property offset 0x80010000 [get_bd_addr_segs {microblaze_0/Data/SEG_iomodule_0_Reg}]'
+// TclEventType: RSB_UPDATE_ADDRASSIGN
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property offset 0x80010000 [get_bd_addr_segs {microblaze_0/Data/SEG_iomodule_0_Reg}] 
+editTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "0x8001_0000", 4, "Master Base Address", 3); // r
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // D
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode. INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 11955.477 ; gain = 0.000 ; free physical = 138 ; free virtual = 8215 
+// Elapsed time: 11 seconds
+dismissDialog("Validate Design"); // bA
+selectButton("OptionPane.button", "OK"); // JButton
+// HMemoryUtils.trashcanNow. Engine heap size: 4,872 MB. GUI used memory: 185 MB. Current time: 8/11/23, 1:50:43 PM WEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1354 ms.
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// Elapsed time: 16 seconds
+dismissDialog("Re-customize IP"); // r
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Map", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 3); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // bj
+// Elapsed time: 26 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Power Estimation", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "IP Symbol", 0); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Power Estimation", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "IP Symbol", 0); // bj
+// Elapsed time: 12 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 3); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 3); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bj
+dismissDialog("Re-customize IP"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// Elapsed time: 11 seconds
+dismissDialog("Re-customize IP"); // r
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HIERARCHY_BLOCK
+// WARNING: HEventQueue.dispatchEvent() is taking  1481 ms.
+// JavaFX intialization before: 1691758351636
+// JavaFX initialization after: 1691758351637
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: current_bd_design [get_bd_designs bd_e547] 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // D
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // D
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: current_bd_design [get_bd_designs design_1] 
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // D
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // D
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // D
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: current_bd_design [get_bd_designs bd_e547] 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: current_bd_design [get_bd_designs design_1] 
+// Elapsed time: 84 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// Elapsed time: 26 seconds
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/dlmb_cntlr/SLMB ; SLMB ; Mem ; 0x8000_0000 ; 8K ; 0x8000_1FFF", 3, "0x8000_0000", 3, false); // r
+// HOptionPane Warning: 'The proposed address '0x0000_0000 [ 8K ]' overlaps with slave segment '/zynq_ultra_ ps_e_0/SAXIGP2/HP0_DDR_LOW' already assigned into address space '/microblaze_0/Data' at '0x0000_0000 [ 2G ]'. Please choose another available address. (Set Base Address)'
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/ilmb_cntlr/SLMB ; SLMB ; Mem ; 0x8000_0000 ; 8K ; 0x8000_1FFF", 10, "0x8000_0000", 3, false); // r
+selectButton("OptionPane.button", "OK"); // JButton
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/zynq_ultra_ps_e_0/SAXIGP2 ; S_AXI_HP0_FPD ; HP0_DDR_LOW ; 0x0000_0000 ; 2G ; 0x7FFF_FFFF", 6, "2G", 4, false); // r
+// Tcl Command: 'set_property range 1G [get_bd_addr_segs {microblaze_0/Data/SEG_zynq_ultra_ps_e_0_HP0_DDR_LOW}]'
+// TclEventType: RSB_UPDATE_ADDRASSIGN
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property range 1G [get_bd_addr_segs {microblaze_0/Data/SEG_zynq_ultra_ps_e_0_HP0_DDR_LOW}] 
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/zynq_ultra_ps_e_0/SAXIGP2 ; S_AXI_HP0_FPD ; HP0_DDR_LOW ; 0x0000_0000 ; 1G ; 0x3FFF_FFFF", 6, "0x3FFF_FFFF", 5, false); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/zynq_ultra_ps_e_0/SAXIGP2 ; S_AXI_HP0_FPD ; HP0_DDR_LOW ; 0x0000_0000 ; 1G ; 0x3FFF_FFFF", 6, "0x0000_0000", 3, false); // r
+// Tcl Command: 'set_property offset 0x40000000 [get_bd_addr_segs {microblaze_0/Data/SEG_zynq_ultra_ps_e_0_HP0_DDR_LOW}]'
+// TclEventType: RSB_UPDATE_ADDRASSIGN
+// TclEventType: RSB_PROPERTY_CHANGE
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/zynq_ultra_ps_e_0/SAXIGP2 ; S_AXI_HP0_FPD ; HP0_DDR_LOW ; 0x4000_0000 ; 1G ; 0x7FFF_FFFF", 6, "0x7FFF_FFFF", 5, false); // r
+// Tcl Message: set_property offset 0x40000000 [get_bd_addr_segs {microblaze_0/Data/SEG_zynq_ultra_ps_e_0_HP0_DDR_LOW}] 
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/dlmb_cntlr/SLMB ; SLMB ; Mem ; 0x8000_0000 ; 8K ; 0x8000_1FFF", 3, "0x8000_0000", 3, false); // r
+// Tcl Command: 'set_property offset 0x00000000 [get_bd_addr_segs {microblaze_0/Data/SEG_lmb_bram_if_cntlr_1_Mem}]'
+// TclEventType: RSB_UPDATE_ADDRASSIGN
+// TclEventType: RSB_PROPERTY_CHANGE
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/iomodule_0/SLMB ; SLMB ; Reg ; 0x8001_0000 ; 64K ; 0x8001_FFFF", 4, "0x8001_0000", 3, false); // r
+// Tcl Message: set_property offset 0x00000000 [get_bd_addr_segs {microblaze_0/Data/SEG_lmb_bram_if_cntlr_1_Mem}] 
+// Tcl Command: 'set_property offset 0x80000000 [get_bd_addr_segs {microblaze_0/Data/SEG_iomodule_0_Reg}]'
+// TclEventType: RSB_UPDATE_ADDRASSIGN
+// TclEventType: RSB_PROPERTY_CHANGE
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/ilmb_cntlr/SLMB ; SLMB ; Mem ; 0x8000_0000 ; 8K ; 0x8000_1FFF", 10, "0x8000_0000", 3, false); // r
+// Tcl Message: set_property offset 0x80000000 [get_bd_addr_segs {microblaze_0/Data/SEG_iomodule_0_Reg}] 
+// Tcl Command: 'set_property offset 0x00000000 [get_bd_addr_segs {microblaze_0/Instruction/SEG_lmb_bram_if_cntlr_0_Mem}]'
+// TclEventType: RSB_UPDATE_ADDRASSIGN
+// TclEventType: RSB_PROPERTY_CHANGE
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/ilmb_cntlr/SLMB ; SLMB ; Mem ; 0x0000_0000 ; 8K ; 0x0000_1FFF", 10, "Mem", 2, false); // r
+// Tcl Message: set_property offset 0x00000000 [get_bd_addr_segs {microblaze_0/Instruction/SEG_lmb_bram_if_cntlr_0_Mem}] 
+// Elapsed time: 123 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // D
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode. INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 12008.625 ; gain = 0.000 ; free physical = 129 ; free virtual = 8202 
+dismissDialog("Validate Design"); // bA
+// Elapsed time: 10 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // B
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : </home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Design"); // bA
+// [Engine Memory]: 5,023 MB (+63303kb) [03:42:50]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,038 MB. GUI used memory: 233 MB. Current time: 8/11/23, 1:57:47 PM WEST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Out-of-Context module run(s) is/are Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_lmb_bram_if_cntlr_0_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_iomodule_0_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_lmb_bram_if_cntlr_1_0_synth_1 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Run Synthesis"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/synth_1/design_1_wrapper.dcp 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: Wrote  : </home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd>  
+// Tcl Message: VHDL Output written to : /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/synth/design_1.v 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: VHDL Output written to : /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/sim/design_1.v VHDL Output written to : /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/hw_handoff/design_1_microblaze_mcs_0_0.hwh Generated Hardware Definition File /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/synth/design_1_microblaze_mcs_0_0.hwdef 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ilmb_cntlr . INFO: [BD 41-1029] Generation completed for the IP Integrator block iomodule_0 . 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh Generated Hardware Definition File /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc . INFO: [BD 41-1029] Generation completed for the IP Integrator block dlmb_cntlr . 
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_pc . 
+// Tcl Message: Exporting to file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Hardware Definition File /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  1324 ms.
+// TclEventType: FILE_SET_NEW
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = 54eb70cfe2c9ada8; cache size = 33.726 MB. INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = 54eb70cfe2c9ada8; cache size = 33.726 MB. INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 79a97ad8c0adbcca; cache size = 33.726 MB. INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 79a97ad8c0adbcca; cache size = 33.726 MB. 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 12200.633 ; gain = 192.008 ; free physical = 133 ; free virtual = 8178 
+// 'k' command handler elapsed time: 17 seconds
+// Elapsed time: 13 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2470 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4730 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  13219 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1229 ms.
+// Elapsed time: 53 seconds
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+// WARNING: HEventQueue.dispatchEvent() is taking  10455 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3693 ms.
+// Elapsed time: 14 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+// WARNING: HEventQueue.dispatchEvent() is taking  1925 ms.
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_OPEN_RESULTS, "Open Static Simulation..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_OPEN_RESULTS
+dismissFileChooser();
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+selectMenuItem(PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION, "Associate ELF Files..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+// Run Command: PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION
+dismissDialog("Associate ELF Files"); // l
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 305ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10946 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7758 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10012 ms. Increasing delay to 4000 ms.
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking 1175ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1175 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 11099 ms. Increasing delay to 33297 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4042 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10735 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 5,388 MB. GUI used memory: 212 MB. Current time: 8/11/23, 2:05:49 PM WEST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7573 ms. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 35234 ms. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 26371 ms. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 41864 ms. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 21107 ms. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1978 ms. Decreasing delay to 3978 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 37722 ms. Increasing delay to 113166 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 39384 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 42504 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  579667 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 12814 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 131457 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 397991 ms. Increasing delay to 1193973 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  435725 ms.
+// WARNING: HTimer (WrapperUtils Delayed Delete Timer) is taking 252ms to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 711ms to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking 404ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1500 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1830 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1140 ms.
+// [Engine Memory]: 5,420 MB (+153330kb) [04:03:00]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 642ms to process. Increasing delay to 4000 ms.
+// Elapsed time: 1277 seconds
+closeMainWindow("Block Design - bd_e547"); // bb
+// HMemoryUtils.trashcanNow. Engine heap size: 5,407 MB. GUI used memory: 207 MB. Current time: 8/11/23, 2:20:44 PM WEST
+// WARNING: HEventQueue.dispatchEvent() is taking  3788 ms.
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "design_1 ;  ; Running Submodule Runs ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Aug 10 16:49:08 WEST 2023 ; 21:31:07 ;  ;  ;  ;  ; ", 3); // az
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  1690 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2598 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1146 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1405 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 128 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Fri Aug 11 14:22:55 2023] Launched impl_1... Run output will be captured here: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 289 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // ag
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Aug 11 14:27:47 2023] Launched impl_1... Run output will be captured here: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 36 ms. Decreasing delay to 2036 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3902 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 5,357 MB. GUI used memory: 208 MB. Current time: 8/11/23, 2:50:50 PM WEST
+// Elapsed time: 1464 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Tcl Command: 'get_property pfm_name [get_files -all {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd}]'
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceEtoH.ExportFixedPlatformWizard_EXPORT_DIRECTORY, (String) null); // s
+setFolderChooser("/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw");
+// Elapsed time: 16 seconds
+setText(PAResourceEtoH.ExportFixedPlatformWizard_XSA_FILE_NAME, "ps_blaze_v4", true); // aa
+selectButton("NEXT", "Next >"); // JButton
+// Tcl Command: 'get_property pfm_name [get_files -all {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd}]'
+selectButton("FINISH", "Finish"); // JButton
+// 'n' command handler elapsed time: 23 seconds
+dismissDialog("Export Hardware Platform"); // g
+// Tcl Message: write_hw_platform -fixed -include_bit -force -file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/ps_blaze_v4.xsa 
+// Tcl Message: INFO: [Vivado 12-4895] Creating Hardware Platform: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/ps_blaze_v4.xsa ... 
+// Tcl Message: INFO: [Vivado 12-12464] The Hardware Platform can be used for Hardware INFO: [Vivado 12-4896] Successfully created Hardware Platform: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/ps_blaze_v4.xsa 
+// Tcl Message: write_hw_platform: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 12200.633 ; gain = 0.000 ; free physical = 145 ; free virtual = 10117 
+// Elapsed time: 13 seconds
+dismissDialog("Export Hardware Platform"); // bA
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1083ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2328 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1159 ms. Increasing delay to 3477 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1331 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  15111 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 5,374 MB. GUI used memory: 201 MB. Current time: 8/11/23, 3:21:02 PM WEST
+// Elapsed time: 1762 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 2005ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2006 ms.
+// Elapsed time: 1180 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+selectMenuItem(PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION, "Associate ELF Files..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+// Run Command: PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION
+selectTreeTable(PAResourceEtoH.ElfFileAssociationDialog_ELF_FILE_ASSOCIATION_TREE_TABLE, "microblaze_mcs_0/inst/microblaze_I ; microblaze_mcs_0/inst/microblaze_I", 2, "microblaze_mcs_0/inst/microblaze_I", 1, false); // D
+selectButton(PAResourceEtoH.ElfFileAssociationDialog_ADD_FILES, "Add Files..."); // a
+// Elapsed time: 102 seconds
+setFileChooser("/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/stand_mcs/Debug/stand_mcs.elf");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1915 ms.
+// Tcl Message: add_files -norecurse /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/stand_mcs/Debug/stand_mcs.elf 
+// Tcl Message: set_property used_in_simulation 0 [get_files /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/stand_mcs/Debug/stand_mcs.elf] 
+dismissDialog("Select ELF Files"); // s
+selectTreeTable(PAResourceEtoH.ElfFileAssociationDialog_ELF_FILE_ASSOCIATION_TREE_TABLE, "microblaze_0 ; microblaze_0", 4, "microblaze_0", 1, false); // D
+selectButton(PAResourceEtoH.ElfFileAssociationDialog_ADD_FILES, "Add Files..."); // a
+setFileChooser("/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/stand_micro0/Debug/stand_micro0.elf");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/stand_micro0/Debug/stand_micro0.elf 
+// Tcl Message: set_property used_in_simulation 0 [get_files /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/stand_micro0/Debug/stand_micro0.elf] 
+dismissDialog("Select ELF Files"); // s
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// 'b' command handler elapsed time: 129 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1649 ms.
+// Tcl Message: set_property SCOPED_TO_REF "" [get_files -all -of_objects [get_fileset sources_1] {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/blaze_app/Debug/blaze_app.elf}] 
+// Tcl Message: set_property SCOPED_TO_CELLS { } [get_files -all -of_objects [get_fileset sources_1] {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/blaze_app/Debug/blaze_app.elf}] 
+// Tcl Message: set_property SCOPED_TO_REF design_1 [get_files -all -of_objects [get_fileset sources_1] {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/stand_mcs/Debug/stand_mcs.elf}] 
+// Tcl Message: set_property SCOPED_TO_CELLS { microblaze_mcs_0/inst/microblaze_I } [get_files -all -of_objects [get_fileset sources_1] {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/stand_mcs/Debug/stand_mcs.elf}] 
+// Tcl Message: set_property SCOPED_TO_REF design_1 [get_files -all -of_objects [get_fileset sources_1] {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/stand_micro0/Debug/stand_micro0.elf}] 
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property SCOPED_TO_CELLS { microblaze_0 } [get_files -all -of_objects [get_fileset sources_1] {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/stand_micro0/Debug/stand_micro0.elf}] 
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Associate ELF Files"); // l
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 444, 236, 1434, 506, false, false, false, true, false); // hx - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // al
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // al
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // al
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION, "Associate ELF Files..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION
+dismissDialog("Associate ELF Files"); // l
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // D
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // D
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Elapsed time: 258 seconds
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // D
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+selectButton("OptionPane.button", "Rerun Validate Design"); // JButton
+// Tcl Command: 'validate_bd_design -force'
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design -force 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode. INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 12249.430 ; gain = 0.000 ; free physical = 146 ; free virtual = 8447 
+// Elapsed time: 24 seconds
+dismissDialog("Validate Design"); // bA
+selectButton("OptionPane.button", "OK"); // JButton
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : </home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// Elapsed time: 15 seconds
+dismissDialog("Save Design"); // bA
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Out-of-Context module run(s) is/are Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run design_1_axi_smc_0_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Run Synthesis"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/synth_1/design_1_wrapper.dcp 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: VHDL Output written to : /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/synth/design_1.v VHDL Output written to : /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/sim/design_1.v VHDL Output written to : /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/hw_handoff/design_1_microblaze_mcs_0_0.hwh Generated Hardware Definition File /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/synth/design_1_microblaze_mcs_0_0.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh Generated Hardware Definition File /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc . 
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_pc . 
+// Tcl Message: Exporting to file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Hardware Definition File /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = 54eb70cfe2c9ada8; cache size = 40.137 MB. INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = 54eb70cfe2c9ada8; cache size = 40.137 MB. INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 79a97ad8c0adbcca; cache size = 40.137 MB. INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 79a97ad8c0adbcca; cache size = 40.137 MB. INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 4492e2ade2915d28; cache size = 40.137 MB. 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  1515 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Fri Aug 11 15:50:12 2023] Launched synth_1... Run output will be captured here: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 12453.492 ; gain = 127.156 ; free physical = 131 ; free virtual = 8433 
+// 'k' command handler elapsed time: 20 seconds
+// Elapsed time: 17 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2417 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 5,584 MB. GUI used memory: 203 MB. Current time: 8/11/23, 3:50:49 PM WEST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 139 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/synth_1/design_1_wrapper.dcp 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri Aug 11 15:52:38 2023] Launched synth_1... Run output will be captured here: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/synth_1/runme.log [Fri Aug 11 15:52:38 2023] Launched impl_1... Run output will be captured here: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "design_1 ;  ; Submodule Runs Complete ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Aug 10 16:49:08 WEST 2023 ; 21:30:49 ;  ;  ;  ;  ; ", 3); // az
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3289 ms. Increasing delay to 9867 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  3278 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3843 ms. Increasing delay to 3000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  1043 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 5222ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5223 ms.
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking 658ms to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1310ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1310 ms.
+// WARNING: updateGUI() is taking  2868 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5705 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1900 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2822 ms.
+// Elapsed time: 413 seconds
+dismissDialog("Implementation Completed"); // ag
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Implementation Out-of-date ; 5.807465076446533 ; 0.0 ; 0.010965006425976753 ; 0.0 ; 0.0 ; 2.0048089027404785 ; 0 ; 4391 ; 4555 ; 4.0 ; 0 ; 0 ; Fri Aug 11 15:55:18 WEST 2023 ; 00:03:53 ; Vivado Implementation Defaults (Vivado Implementation 2021) ; Vivado Implementation Default Reports (Vivado Implementation 2021) ; xczu3eg-sbva484-1-i ; luiscarlos-GL552VX ; Default settings for Implementation.", 1, "impl_1", 0, false); // az
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 3.8s
+// WARNING: HEventQueue.dispatchEvent() is taking  4667 ms.
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ;  ; 0 ; 0 ; 0.0 ; 0 ; 0 ; Fri Aug 11 15:52:40 WEST 2023 ; 00:02:21 ; Vivado Synthesis Defaults (Vivado Synthesis 2021) ; Vivado Synthesis Default Reports (Vivado Synthesis 2021) ; xczu3eg-sbva484-1-i ; luiscarlos-GL552VX ; Vivado Synthesis Defaults", 0, "synth_1", 0, true); // az - Node
+selectButton(PAResourceEtoH.ExploreAheadView_LAUNCH_SELECTED_RUNS, "Design Runs_launch_runs"); // D
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Reset Run"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/synth_1/design_1_wrapper.dcp 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Fri Aug 11 15:59:52 2023] Launched synth_1... Run output will be captured here: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 291ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3862 ms.
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking 928ms to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 231ms to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 215ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 225 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// 'c' command handler elapsed time: 74 seconds
+// Elapsed time: 75 seconds
+dismissDialog("Synthesis is Out-of-date"); // A
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.3s
+// Tcl Message: INFO: [Project 1-1161] Replacing file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/synth_1/design_1_wrapper.dcp 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.2s
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Fri Aug 11 16:04:58 2023] Launched synth_1... Run output will be captured here: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Cancel Process"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bA
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // D
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design -force'
+selectButton("OptionPane.button", "Rerun Validate Design"); // JButton
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design -force 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 5,692 MB (+678kb) [05:50:13]
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode. INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 12485.508 ; gain = 0.000 ; free physical = 123 ; free virtual = 7924 
+// Elapsed time: 11 seconds
+dismissDialog("Validate Design"); // bA
+selectButton("OptionPane.button", "OK"); // JButton
+// Elapsed time: 43 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "design_1 ;  ; Submodule Runs Not Started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Aug 10 16:49:08 WEST 2023 ; 21:30:49 ;  ;  ;  ;  ; ", 3, "design_1", 0, true); // az - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+dismissDialog("Save Project"); // al
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd>  
+dismissDialog("Save Constraints"); // bA
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: VHDL Output written to : /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/synth/design_1.v VHDL Output written to : /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/sim/design_1.v VHDL Output written to : /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/hw_handoff/design_1_microblaze_mcs_0_0.hwh Generated Hardware Definition File /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/ip/design_1_microblaze_mcs_0_0/bd_0/synth/design_1_microblaze_mcs_0_0.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh Generated Hardware Definition File /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc . 
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_pc . 
+// Tcl Message: Exporting to file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Hardware Definition File /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  1152 ms.
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = 54eb70cfe2c9ada8; cache size = 40.137 MB. INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 79a97ad8c0adbcca; cache size = 40.137 MB. INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 79a97ad8c0adbcca; cache size = 40.137 MB. INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = 54eb70cfe2c9ada8; cache size = 40.137 MB. INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 4492e2ade2915d28; cache size = 40.137 MB. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Fri Aug 11 16:06:26 2023] Launched synth_1... Run output will be captured here: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 12725.680 ; gain = 180.074 ; free physical = 148 ; free virtual = 7823 
+// 'k' command handler elapsed time: 20 seconds
+// Elapsed time: 15 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 139 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Fri Aug 11 16:08:47 2023] Launched impl_1... Run output will be captured here: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  3689 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 293 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // ag
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Aug 11 16:13:42 2023] Launched impl_1... Run output will be captured here: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 128 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Tcl Command: 'get_property pfm_name [get_files -all {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd}]'
+// Elapsed time: 17 seconds
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+// Elapsed time: 22 seconds
+selectButton(PAResourceEtoH.ExportFixedPlatformWizard_EXPORT_DIRECTORY, (String) null); // s
+setFolderChooser("/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw");
+setText(PAResourceEtoH.ExportFixedPlatformWizard_XSA_FILE_NAME, "ps_blaze_v5", true); // aa
+selectButton("NEXT", "Next >"); // JButton
+// Tcl Command: 'get_property pfm_name [get_files -all {/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze/vivado_project/ps_and_blaze.srcs/sources_1/bd/design_1/design_1.bd}]'
+selectButton("FINISH", "Finish"); // JButton
+// 'n' command handler elapsed time: 50 seconds
+dismissDialog("Export Hardware Platform"); // g
+// Tcl Message: write_hw_platform -fixed -include_bit -force -file /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/ps_blaze_v5.xsa 
+// Tcl Message: INFO: [Vivado 12-4895] Creating Hardware Platform: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/ps_blaze_v5.xsa ... 
+// Tcl Message: INFO: [Vivado 12-12464] The Hardware Platform can be used for Hardware INFO: [Vivado 12-4896] Successfully created Hardware Platform: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/ps_blaze_v5.xsa 
+// Tcl Message: write_hw_platform: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 12725.680 ; gain = 0.000 ; free physical = 384 ; free virtual = 7687 
+// Elapsed time: 12 seconds
+dismissDialog("Export Hardware Platform"); // bA
+// Elapsed time: 69 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+selectMenuItem(PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION, "Associate ELF Files..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+// Run Command: PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION
+// WARNING: HEventQueue.dispatchEvent() is taking  3275 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 5,817 MB. GUI used memory: 219 MB. Current time: 8/11/23, 4:20:50 PM WEST
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 216ms to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 846ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2686 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4962 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 5,844 MB. GUI used memory: 218 MB. Current time: 8/11/23, 4:50:52 PM WEST
+// 'b' command handler elapsed time: 2907 seconds
+// Elapsed time: 2907 seconds
+dismissDialog("Associate ELF Files"); // l
+// HMemoryUtils.trashcanNow. Engine heap size: 5,855 MB. GUI used memory: 213 MB. Current time: 8/11/23, 5:20:52 PM WEST
+// WARNING: HEventQueue.dispatchEvent() is taking  5031 ms.
+// Elapsed time: 2145 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 136 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// PAPropertyPanels.initPanels (Data) elapsed time: 0.3s
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/zynq_ultra_ps_e_0/Data (40 address bits : 0x00A0000000 [ 256M ] ,0x0400000000 [ 4G ] ,0x1000000000 [ 224G ] ,0x00B0000000 [ 256M ] ,0x0500000000 [ 4G ] ,0x4800000000 [ 224G ]) ;  ;  ;  ;  ; ", 13, "/zynq_ultra_ps_e_0/Data (40 address bits : 0x00A0000000 [ 256M ] ,0x0400000000 [ 4G ] ,0x1000000000 [ 224G ] ,0x00B0000000 [ 256M ] ,0x0500000000 [ 4G ] ,0x4800000000 [ 224G ])", 0, true); // r - Node
+selectTreeTableHeader(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Master High Address", 5); // r
+selectTreeTableHeader(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Master High Address", 5); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/axi_gpio_1/S_AXI ; S_AXI ; Reg ; 0x00_A001_0000 ; 64K ; 0x00_A001_FFFF", 15, "/axi_gpio_1/S_AXI", 0, false); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/axi_gpio_0/S_AXI ; S_AXI ; Reg ; 0x00_A000_0000 ; 64K ; 0x00_A000_FFFF", 14, "/axi_gpio_0/S_AXI", 0, false); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/zynq_ultra_ps_e_0/Data (40 address bits : 0x00A0000000 [ 256M ] ,0x0400000000 [ 4G ] ,0x1000000000 [ 224G ] ,0x00B0000000 [ 256M ] ,0x0500000000 [ 4G ] ,0x4800000000 [ 224G ]) ;  ;  ;  ;  ; ", 13, "/zynq_ultra_ps_e_0/Data (40 address bits : 0x00A0000000 [ 256M ] ,0x0400000000 [ 4G ] ,0x1000000000 [ 224G ] ,0x00B0000000 [ 256M ] ,0x0500000000 [ 4G ] ,0x4800000000 [ 224G ])", 0, true); // r - Node
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Map", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Map", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+selectMenuItem(PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION, "Associate ELF Files..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+// Run Command: PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION
+// Elapsed time: 17 seconds
+selectTreeTable(PAResourceEtoH.ElfFileAssociationDialog_ELF_FILE_ASSOCIATION_TREE_TABLE, "microblaze_mcs_0/inst/microblaze_I ; microblaze_mcs_0/inst/microblaze_I", 2, "microblaze_mcs_0/inst/microblaze_I", 1, false); // D
+selectList(PAResourceEtoH.ElfFileAssociationDialog_ELF_FILE_ASSOCIATION_LIST, "/home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/stand_mcs/Debug/stand_mcs.elf", 2, false, false, false, true, false); // u - Popup Trigger
+dismissDialog("Select ELF Files"); // s
+// WARNING: HEventQueue.dispatchEvent() is taking  3028 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 5,813 MB. GUI used memory: 216 MB. Current time: 8/11/23, 5:50:50 PM WEST
+// 'b' command handler elapsed time: 1097 seconds
+// Elapsed time: 1068 seconds
+dismissDialog("Associate ELF Files"); // l
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// Tcl Message: open_run impl_1 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1118 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 5,882 MB. GUI used memory: 214 MB. Current time: 8/11/23, 6:04:52 PM WEST
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /tools/Xilinx/Vivado/2021.2/data/parts/xilinx/zynquplus/devint/zynquplus/xczu3eg/xczu3eg.xgd; ZipEntry: xczu3eg_detail.xgd elapsed time: 1.4s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.6s
+// [GUI Memory]: 321 MB (+14274kb) [07:49:58]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  3059 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.35 . Memory (MB): peak = 12725.680 ; gain = 0.000 ; free physical = 137 ; free virtual = 6822 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 452 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2021.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 12725.680 ; gain = 0.000 ; free physical = 126 ; free virtual = 6490 
+// Tcl Message: Restored from archive | CPU: 2.980000 secs | Memory: 10.054993 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 12725.680 ; gain = 0.000 ; free physical = 148 ; free virtual = 6496 
+// Tcl Message: Generating merged BMM file for the design top 'design_1_wrapper'... 
+// Tcl Message: INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/stand_mcs/Debug/stand_mcs.elf /home/luiscarlos/Desktop/ultra/exp3/ps_and_blaze_sw/stand_micro0/Debug/stand_micro0.elf  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 12725.680 ; gain = 0.000 ; free physical = 136 ; free virtual = 6495 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 338 instances were transformed.   IBUF => IBUF (IBUFCTRL, INBUF): 3 instances   LUT6_2 => LUT6_2 (LUT5, LUT6): 160 instances   RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 43 instances   RAM32X1D => RAM32X1D (RAMD32(x2)): 132 instances  
+// [Engine Memory]: 6,008 MB (+32871kb) [07:50:00]
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 12725.680 ; gain = 0.000 ; free physical = 138 ; free virtual = 6412 
+// ExpRunCommands.openImplResults elapsed time: 33.5s
+// TclEventType: DRC_ADDED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 3.9s
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 347 MB (+10406kb) [07:50:05]
+// WARNING: HEventQueue.dispatchEvent() is taking  5576 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1471 ms.
+// [Engine Memory]: 6,386 MB (+81469kb) [07:50:10]
+// 'el' command handler elapsed time: 43 seconds
+// Elapsed time: 43 seconds
+dismissDialog("Open Implemented Design"); // bA
+// HMemoryUtils.trashcanNow. Engine heap size: 6,281 MB. GUI used memory: 295 MB. Current time: 8/11/23, 6:05:08 PM WEST
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_10965 (1) ; OUT ;  ;  ;  ;  ; true ; 26 ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ;  ;  ;  ;  ;  ;  ; ", 3); // A
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "gpio_io_o (1) ; OUT ;  ;  ;  ;  ; true ; 26 ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ;  ;  ;  ;  ;  ;  ; ", 4); // A
+selectButton(PAResourceQtoS.SignalsView_EXPAND_ALL, "I/O Ports_expand_all"); // D
+// WARNING: HEventQueue.dispatchEvent() is taking  5626 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 6,189 MB. GUI used memory: 290 MB. Current time: 8/11/23, 6:35:13 PM WEST
+// WARNING: HEventQueue.dispatchEvent() is taking  5991 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 6,186 MB. GUI used memory: 288 MB. Current time: 8/11/23, 7:05:14 PM WEST
+// Elapsed time: 4479 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (2) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 22, "Scalar ports (2)", 0, true, false, false, false, true, false); // A - Popup Trigger - Node
+// PAPropertyPanels.initPanels (GPIO_59924) elapsed time: 0.4s
+// Elapsed time: 169 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_59924 (1) ; IN ;  ;  ;  ;  ; true ; 26 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ;  ;  ;  ;  ;  ;  ; ", 13, "NONE", 14, true); // A - Node
+// TclEventType: SIGNAL_MODIFY
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_59924 (1) ; IN ;  ;  ;  ;  ; true ; 26 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ;  ;  ;  ;  ;  ;  ; ", 13, "NONE", 13, true); // A - Node
+// Tcl Message: set_property OFFCHIP_TERM NONE [get_ports [list {gpio_io_i[0]}]] 
+// TclEventType: SIGNAL_MODIFY
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_59924 (1) ; IN ;  ;  ;  ;  ; true ; 26 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ;  ;  ;  ;  ;  ;  ; ", 13, "3.3", 9, true); // A - Node
+// Tcl Message: set_property PULLTYPE NONE [get_ports [list {gpio_io_i[0]}]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_59924 (1) ; IN ;  ;  ;  ;  ; true ; 26 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ;  ;  ;  ;  ;  ;  ; ", 13, "3.3", 9, true); // A - Node
+// Elapsed time: 690 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_59924 (1) ; IN ;  ;  ;  ;  ; true ; 26 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ;  ;  ;  ;  ;  ;  ; ", 13, "NONE", 13, true); // A - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property PULLTYPE PULLUP [get_ports [list {gpio_io_i[0]}]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_59924 (1) ; IN ;  ;  ;  ;  ; true ; 26 ; LVCMOS33 ; 3.3 ;  ;  ;  ; PULLUP ; NONE ;  ;  ;  ;  ;  ;  ; ", 13, "PULLUP", 13, true); // A - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property PULLTYPE PULLUP [get_ports [list {gpio_io_i[0]}]] 
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j
+closeTask("Implementation", "Implemented Design", "DesignTask.RESULTS_ANALYSIS");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// HOptionPane Warning: 'Would you like to save 'Implemented Design - impl_1' before closing? (Unsaved Changes)'
+dismissDialog("Confirm Close"); // A
+selectButton("OptionPane.button", "No"); // JButton
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,203 MB. GUI used memory: 272 MB. Current time: 8/11/23, 7:34:49 PM WEST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 6,203 MB. GUI used memory: 277 MB. Current time: 8/11/23, 7:34:52 PM WEST
+// WARNING: HEventQueue.dispatchEvent() is taking  9975 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// Elapsed time: 18 seconds
+dismissDialog("Close"); // bA
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 649ms to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 2553ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2553 ms.
