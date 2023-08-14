@@ -1,6 +1,6 @@
 vivado_project/*
-./*.str
-./*.jou
-./*.log
-./*.debug
+*.str
+*.jou
+*.log
+*.debug
 .Xil/*
