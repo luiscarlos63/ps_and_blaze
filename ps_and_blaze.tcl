@@ -175,6 +175,7 @@ set_property -name "used_in_simulation" -value "0" -objects $file_obj
 # Set 'sources_1' fileset properties
 set obj [get_filesets sources_1]
 set_property -name "top" -value "design_1_wrapper" -objects $obj
+set_property -name "top_auto_set" -value "0" -objects $obj
 
 # Create 'constrs_1' fileset (if not found)
 if {[string equal [get_filesets -quiet constrs_1] ""]} {
@@ -209,6 +210,7 @@ set obj [get_filesets sim_1]
 # Set 'sim_1' fileset properties
 set obj [get_filesets sim_1]
 set_property -name "top" -value "design_1_wrapper" -objects $obj
+set_property -name "top_auto_set" -value "0" -objects $obj
 set_property -name "top_lib" -value "xil_defaultlib" -objects $obj
 
 # Set 'utils_1' fileset object
@@ -249,6 +251,7 @@ proc cr_bd_design_1 { parentCell } {
   xilinx.com:ip:lmb_bram_if_cntlr:4.0\
   xilinx.com:ip:iomodule:3.1\
   xilinx.com:ip:blk_mem_gen:8.4\
+  xilinx.com:ip:mdm:3.2\
   xilinx.com:ip:microblaze:11.0\
   xilinx.com:ip:microblaze_mcs:3.0\
   xilinx.com:ip:proc_sys_reset:5.0\
@@ -367,6 +370,9 @@ proc cr_bd_design_1 { parentCell } {
    CONFIG.Memory_Type {True_Dual_Port_RAM} \
  ] $lmb_bram_if_cntlr_0_bram
 
+  # Create instance: mdm_0, and set properties
+  set mdm_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:mdm:3.2 mdm_0 ]
+
   # Create instance: microblaze_0, and set properties
   set microblaze_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:11.0 microblaze_0 ]
   set_property -dict [ list \
@@ -375,14 +381,14 @@ proc cr_bd_design_1 { parentCell } {
    CONFIG.C_CACHE_BYTE_SIZE {4096} \
    CONFIG.C_DCACHE_ADDR_TAG {0} \
    CONFIG.C_DCACHE_BYTE_SIZE {4096} \
-   CONFIG.C_DEBUG_ENABLED {0} \
+   CONFIG.C_DEBUG_ENABLED {1} \
    CONFIG.C_D_AXI {1} \
    CONFIG.C_D_LMB {1} \
    CONFIG.C_I_AXI {0} \
    CONFIG.C_MMU_DTLB_SIZE {2} \
    CONFIG.C_MMU_ITLB_SIZE {1} \
    CONFIG.C_MMU_ZONES {2} \
-   CONFIG.C_NUMBER_OF_PC_BRK {0} \
+   CONFIG.C_NUMBER_OF_PC_BRK {8} \
    CONFIG.C_USE_REORDER_INSTR {0} \
    CONFIG.G_TEMPLATE_LIST {1} \
  ] $microblaze_0
@@ -390,9 +396,10 @@ proc cr_bd_design_1 { parentCell } {
   # Create instance: microblaze_mcs_0, and set properties
   set microblaze_mcs_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze_mcs:3.0 microblaze_mcs_0 ]
   set_property -dict [ list \
-   CONFIG.DEBUG_ENABLED {0} \
+   CONFIG.DEBUG_ENABLED {1} \
    CONFIG.GPO1_SIZE {1} \
    CONFIG.INTC_USE_EXT_INTR {0} \
+   CONFIG.JTAG_CHAIN {3} \
    CONFIG.TRACE {0} \
    CONFIG.UART_BAUDRATE {115200} \
    CONFIG.UART_PROG_BAUDRATE {0} \
@@ -1147,6 +1154,7 @@ Port;FD4A0000;FD4AFFFF;1|FPD;DPDMA;FD4C0000;FD4CFFFF;1|FPD;DDR_XMPU5_CFG;FD05000
   connect_bd_intf_net -intf_net iomodule_0_UART [get_bd_intf_ports UART] [get_bd_intf_pins iomodule_0/UART]
   connect_bd_intf_net -intf_net lmb_bram_if_cntlr_0_BRAM_PORT [get_bd_intf_pins ilmb_cntlr/BRAM_PORT] [get_bd_intf_pins lmb_bram_if_cntlr_0_bram/BRAM_PORTA]
   connect_bd_intf_net -intf_net lmb_bram_if_cntlr_1_BRAM_PORT [get_bd_intf_pins dlmb_cntlr/BRAM_PORT] [get_bd_intf_pins lmb_bram_if_cntlr_0_bram/BRAM_PORTB]
+  connect_bd_intf_net -intf_net mdm_0_MBDEBUG_0 [get_bd_intf_pins mdm_0/MBDEBUG_0] [get_bd_intf_pins microblaze_0/DEBUG]
   connect_bd_intf_net -intf_net microblaze_0_DLMB [get_bd_intf_pins dlmb/LMB_M] [get_bd_intf_pins microblaze_0/DLMB]
   connect_bd_intf_net -intf_net microblaze_0_ILMB [get_bd_intf_pins ilmb/LMB_M] [get_bd_intf_pins microblaze_0/ILMB]
   connect_bd_intf_net -intf_net microblaze_0_M_AXI_DP [get_bd_intf_pins axi_smc/S00_AXI] [get_bd_intf_pins microblaze_0/M_AXI_DP]
@@ -1160,6 +1168,7 @@ Port;FD4A0000;FD4AFFFF;1|FPD;DPDMA;FD4C0000;FD4CFFFF;1|FPD;DDR_XMPU5_CFG;FD05000
   connect_bd_net -net axi_gpio_1_gpio_io_o [get_bd_ports gpio_io_o] [get_bd_pins axi_gpio_1/gpio_io_o]
   connect_bd_net -net gpio_io_i_1 [get_bd_ports gpio_io_i] [get_bd_pins axi_gpio_0/gpio_io_i]
   connect_bd_net -net iomodule_0_GPO1 [get_bd_ports GPO1] [get_bd_pins iomodule_0/GPO1]
+  connect_bd_net -net mdm_0_Debug_SYS_Rst [get_bd_pins mdm_0/Debug_SYS_Rst] [get_bd_pins rst_ps8_0_100M/mb_debug_sys_rst]
   connect_bd_net -net microblaze_mcs_0_GPIO1_tri_o [get_bd_ports GPIO1_tri_o] [get_bd_pins microblaze_mcs_0/GPIO1_tri_o]
   connect_bd_net -net rst_ps8_0_100M_bus_struct_reset [get_bd_pins dlmb/SYS_Rst] [get_bd_pins dlmb_cntlr/LMB_Rst] [get_bd_pins ilmb/SYS_Rst] [get_bd_pins ilmb_cntlr/LMB_Rst] [get_bd_pins rst_ps8_0_100M/bus_struct_reset]
   connect_bd_net -net rst_ps8_0_100M_mb_reset [get_bd_pins microblaze_0/Reset] [get_bd_pins rst_ps8_0_100M/mb_reset]
@@ -1169,9 +1178,9 @@ Port;FD4A0000;FD4AFFFF;1|FPD;DPDMA;FD4C0000;FD4CFFFF;1|FPD;DDR_XMPU5_CFG;FD05000
   connect_bd_net -net zynq_ultra_ps_e_0_pl_resetn0 [get_bd_pins microblaze_mcs_0/Reset] [get_bd_pins rst_ps8_0_100M/ext_reset_in] [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0]
 
   # Create address segments
-  assign_bd_address -offset 0x80000000 -range 0x00010000 -target_address_space [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs iomodule_0/SLMB/Reg] -force
-  assign_bd_address -offset 0x00000000 -range 0x00002000 -target_address_space [get_bd_addr_spaces microblaze_0/Instruction] [get_bd_addr_segs ilmb_cntlr/SLMB/Mem] -force
   assign_bd_address -offset 0x00000000 -range 0x00002000 -target_address_space [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs dlmb_cntlr/SLMB/Mem] -force
+  assign_bd_address -offset 0x00000000 -range 0x00002000 -target_address_space [get_bd_addr_spaces microblaze_0/Instruction] [get_bd_addr_segs ilmb_cntlr/SLMB/Mem] -force
+  assign_bd_address -offset 0x80000000 -range 0x00010000 -target_address_space [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs iomodule_0/SLMB/Reg] -force
   assign_bd_address -offset 0x40000000 -range 0x40000000 -target_address_space [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_LOW] -force
   assign_bd_address -offset 0xFF000000 -range 0x01000000 -target_address_space [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM] -force
   assign_bd_address -offset 0xA0000000 -range 0x00010000 -target_address_space [get_bd_addr_spaces zynq_ultra_ps_e_0/Data] [get_bd_addr_segs axi_gpio_0/S_AXI/Reg] -force
